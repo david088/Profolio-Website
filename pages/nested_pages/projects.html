@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../../CSS/styles_General.css">
+    <link rel="stylesheet" href="../../CSS/styles_Projects.css">
+    <script src="../../JS/analytics.js"></script>
+    <meta charset="UTF-8">
+    <meta name="author" content="David Zhao">
+    <meta name="description" content="David Zhao's Coding Projects">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Zhao Portfolio</title>
+</head>
+
+<body>
+    <header id="topPage">
+        <h1 class="name">
+            David Zhao
+        </h1>
+
+        <!-- quick buttons -->
+        <nav class="buttonPos">
+            <form action="../support.html" method="GET"> <button class="buttons eachButton">Contact</button> </form>
+            <form action="../about.html" method="GET"> <button class="buttons eachButton">About</button> </form>
+            <form action="../art.html" method="GET"> <button class="buttons eachButton">Art</button> </form>
+            <form action="../work.html" method="GET"> <button class="buttons selectedButton">Work</button> </form>
+            <form action="../../index.html" method="GET"> <button class="buttons eachButton">Home</button> </form>    
+        </nav>
+
+        <nav class="buttonPos2">
+            <button class="dropDown_button">Menu</button>
+            <nav class="dropDown_content">
+                <a href="../../index.html"> Home </a>
+                <a href="../work.html" > Work </a>
+                <a href="../art.html" > Art </a>
+                <a href="../about.html" > About</a>
+                <a href="../support.html"> Contact</a>
+            </nav>    
+            <script src="../../JS/dropDownButton.js"></script>
+        </nav>
+
+    </header>
+    <section class="titleSection">
+        <h2 id="topTitle" class="titleName">CODING PROJECTS</h2>
+    </section>
+
+    <main>
+        <section class="jobs">
+            <h2>Space Ride <span> - Lanaguage: C++</span></h2>
+            <h3>Lanaguage - C++</h3>
+            
+                <p>
+                    A very fun project where I got to create my ride in a choice of environment. <br>
+                    It was programmed with OpenGL in C++. The main components are the Ride, Disco Ball, and Skybox where each has unique shader files to apply the triangular mesh. 
+                    The ride was assembled with individual models include bunny, cylinder, sphere, and rings. Each object has a unique color and shininess defined with ambient, diffuse, and specular lights.
+                    The shinny Disco Ball was implemented using environmental mapping as it reflecting the skybox.
+                </p>
+            
+                <details>
+                    <summary>Watch Project Video</summary>
+                    <video controls>
+                        <source src="../../documents/Project3_Video.mkv" type="video/mp4">
+                    </video>
+                </details>
+            
+        </section>
+    
+        <hr>
+        <section class="jobs">
+            <h2>Among Us <span> - Lanaguage: C++</span></h2>
+            <h3>Lanaguage - C++</h3>
+            
+                <p>
+                    Inspired by popular online video game Among Us. This project uses tone shading, particle effects, and collision detection, 
+                    the astronauts can go around the rocket and bounce around when hitting an obstacle or another astronaut. There will be particle 
+                    effects on astronauts when appearing and disappearing in the rocket. With the video showing below, an astronaut was controllable with user input.
+                </p>
+            
+                <details>
+                    <summary>Watch Project Video</summary>
+                    <video controls>
+                        <source src="../../documents/Project4_Video.mkv" type="video/mp4">
+                    </video>
+                </details>
+            
+        </section>
+        
+        <hr>
+        <section class="jobs">
+            <h2>Courage <span> - Lanaguage: Javascript with P5.js</span></h2>
+            <h3>Lanaguage: Javascript with P5.js</h3>
+            
+                <p>
+                    My first project was done with P5.js. Every element was programmed by me except the hand and ladders were imported images. 
+                    The program was created as generative art where many elements are incorporated with a random value. This can be seen as
+                    the background effects and block elements throughout the story<br><br> 
+                    The goal of this project is to construct an environment showing what it takes to succeed, but the process can be tough and tiring, but that is not the excuse to give up. Assist the main character through the story and enjoy the ride <br> <br>
+                    Chapter1 - Main characters(MC) went from ordinary to dreaming big and seeing hope.<br>
+                    Chapter2 - It presents the toughness to reach the goal. The Player will control the MC to overcome obstacles and see the result<br>
+                    Chapter3 - With the failure to reach the goal, the inner(self) and outer(society) voices can be harmful. Battle the voice with your COURAGE and PERSISTENCE<br>
+                    Chapter4 - After all the hard work, the player will reach success. They are granted with some takeaways to guide them in future events.
+                </p>
+            
+                <details>
+                    <summary>Play (Require Computer Arrow Keys)</summary>
+                    <iframe width="800" height="500" src="https://editor.p5js.org/DavidZ088/embed/hHdfbYu4n"></iframe>
+                    <a class="aLink" href="https://editor.p5js.org/DavidZ088/present/hHdfbYu4n">PLAY ON P5 WEBSITE</a>
+                    <aside>
+                        <h4>Instruction:</h4>
+                        <ol style="font-family: Georgia, serif;">
+                            <li>
+                                Chapter 1:
+                                <ul>
+                                    <li>Make a choice to help/ababdon the main character </li>
+                                </ul>
+                            </li>
+        
+                            <li>
+                                Chapter 2:
+                                <ul>
+                                    <li>Use [left-arrow] and [right-arrow] keys to help main character dodge the obstacles</li>
+                                    <li>When Energy falls to 0, chapter 2 ends</li>
+                                </ul>
+                            </li>
+        
+                            <li>
+                                Chapter 3:
+                                <ul>
+                                    <li>Click at the button below the main character</li>
+                                    <li>Even you don't see anyting change yet, KEEP GOING!</li>
+                                    <li>Keep clicking to encourage the main character</li>
+                                </ul>
+                            </li>
+        
+                            <li>
+                                Chapter 4:
+                                <ul>
+                                    <li>Congrates!!</li>
+                                    <li>Click on floating bubbles for the take-aways</li>
+                                    <li>Click twice, bubble will disappear. Poke all bubbles</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </aside>
+                </details>
+            
+        </section>
+    
+        <hr>
+        <section class="jobs">
+            <h2>The Power of Words <span> - Lanaguage: Javascript with P5.js</span></h2>
+            <h3>Lanaguage - Javascript with P5.js</h3>
+            
+                <p>
+                    One of my projects was done with P5.js. Similar to previous shown projects Courage, this will also require user <br>
+                    interactions to construct a result of many. The project is done in the fashion of interactive art. With entered strings <br>
+                    the program will display an image to show a certain situation. All element was a program by me and images showing in <br>
+                    this project is my digital art. <br>
+                    (If you are interested in my art please navigate to the ART page with top navigation Thank you!)<br><br>
+                    
+                    The goal of this project is to show the good and bad one's words can do. There are 2 categories of words to choose from, the program will detect strings existing in the database then display them on screen. Then it calculates the 
+                    the difference in the ratio of the words entered and display a cords binding art were displaying the emotion of others.
+                </p>
+            
+                <details>
+                    <summary>Play (Require Computer Arrow Keys)</summary>
+                    <iframe width="800" height="550" src="https://editor.p5js.org/DavidZ088/embed/KDnxHIxyS"></iframe>
+                    <a class="aLink" href="https://editor.p5js.org/DavidZ088/present/KDnxHIxyS">PLAY ON P5 WEBSITE</a>
+                    <aside>
+                        <h4>Instruction:</h4>
+                        <ul style="font-family: Georgia, serif;">
+                            <li>
+                                Enter your choice of words. There are 4 different outcomes. Try Different Ratio of Positive/Negative Words
+                            </li>
+                            <li>Positive: [happiness, love, courage, healthy, peace, kind, joy]</li>
+                            <li>Negative: [jealousy, hate, blame, insurity, discrimination, anger, complains]</li>
+                            <li>Type [reset] to set the output to default image</li>
+                            <li>HIDDEN OPTION: Enter words [we, are, in, this, together] one by one to see the 6th outcome</li>
+                        </ul>
+                    </aside>
+                </details>
+            
+        </section>
+    </main>
+
+    <nav class="quickButtons">
+        <a class="jumpButton" href="workExp.html"> Working Experience</a> 
+        <a class="jumpButton" href="#topPage"> Back to Top</a> 
+    </nav> 
+
+    <footer>
+        <p class="footerText">DEVELOPED BY DAVID ZHAO &#128060;</p>
+    </footer>
+</body>
+</html>

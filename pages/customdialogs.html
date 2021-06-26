@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../CSS/styles_General.css">
+    <link rel="stylesheet" href="../CSS/styles_Dialogs.css">
+    <script src="../JS/analytics.js"></script>
+    <!-- <script type="text/javascript" src="../DOMPurify/src/purify.js"></script> -->
+    <meta charset="UTF-8">
+    <meta name="author" content="David Zhao">
+    <meta name="description" content="David Zhao's Experiment Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Zhao Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="name">
+            David Zhao
+        </h1>
+
+        <!-- quick buttons -->
+        <nav class="buttonPos">
+            <form action="support.html" method="GET"> <button class="buttons eachButton">Contact</button> </form>
+            <form action="about.html" method="GET"> <button class="buttons eachButton">About</button> </form>
+            <form action="art.html" method="GET"> <button class="buttons eachButton">Art</button> </form>
+            <form action="work.html" method="GET"> <button class="buttons eachButton">Work</button> </form>
+            <form action="../index.html" method="GET"> <button class="buttons eachButton">Home</button> </form>    
+        </nav>
+
+        <nav class="buttonPos2">
+            <button class="dropDown_button">Menu</button>
+            <nav class="dropDown_content">
+                <a href="../index.html"> Home </a>
+                <a href="work.html" > Work </a>
+                <a href="art.html" > Art </a>
+                <a href="about.html" > About</a>
+                <a href="support.html"> Contact</a>
+            </nav>   
+            <script src="../../JS/dropDownButton.js"></script> 
+        </nav>
+
+    </header>
+    <section class="titleSection">
+        <h2 id="topTitle" class="titleName">Custom Dialogs</h2>
+    </section>
+
+    <main>
+        <nav class="quickButtons">
+            <button id="alertCB" class="jumpButton2">Alert</button>
+            <button id="confirmCB" class="jumpButton2">Confirm</button>
+            <button id="safePCB" class="jumpButton2">Prompt</button>
+        </nav>
+
+        <!-- ALERT DIALOG -->
+        <dialog id="alertD">
+            <p>ALERT! ALERT! ALERT! YOU CLICKED THE ALERT BUTTON</p>
+            <button class="cutomButton alertClose">OK</button>
+        </dialog>
+
+        <!-- COMFIRM DIALOG -->
+        <dialog id="confirmD">
+            <p>Did you order a pizza?</p>
+            <button class="cutomButton confirmClose">Cancel</button>
+            <button class="cutomButton confirmOk">OK</button>
+        </dialog>
+
+        <!-- PROMPT DIALOGS -->
+        <dialog id="promptD">
+            <p>
+                <label>What did you eat for breakfast?</label>
+                <input type="text" id="promptInput" name="promptInput">
+            </p>
+            <button class="cutomButton promptClose">Cancel</button>
+            <button class="cutomButton promptOk">OK</button>
+        </dialog>
+
+        <div class="outputSection extraSection" >
+            <output class="resultSec"></output>
+        </div>
+
+        <script src="DOMPurify/dist/purify.min.js" > </script>
+        <script src="../JS/customdialog.js"></script>
+    </main>
+    
+    <footer>
+        <p class="footerText">DEVELOPED BY DAVID ZHAO &#128060;</p>
+    </footer>
+
+</body>
+</html>

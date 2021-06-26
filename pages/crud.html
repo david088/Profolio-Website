@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <script type="text/javascript" src="../DOMPurify/src/purify.js"></script> -->
+    <script src="../JS/analytics.js"></script>
+    <meta charset="UTF-8">
+    <meta name="author" content="David Zhao">
+    <meta name="description" content="David Zhao's Experiment Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Zhao Portfolio</title>
+
+    <style>
+        dialog {
+            background-color: white;
+            color: black;
+            /* text-align: center; */
+            border: none;
+            padding: 2vw;
+            border-radius: 1vw;
+            max-width: 90vw;
+            font-size: 2.4vh;
+        }
+
+        dialog::backdrop {
+            background: rgb(0,0,0, 0.4);
+        }
+
+        section {
+            border: 0.5vw solid black;
+            padding: 2vw;
+            padding-top: 0;
+            margin-bottom: 1vw;
+        }
+
+        #editBlock {
+            display: none;
+        }
+
+        
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            BLOG
+        </h1>
+    </header>
+
+    <hr>
+
+    <main>
+        <a href="../index.html">HOME</a>
+        <button id="blogButton">NEW BLOG</button>
+        <hr>
+        <table>
+            <tbody id="blogItem">
+            </tbody>
+        </table>
+
+        <!-- INPUT BLOG FROM HERE -->
+        <dialog id="blogD">
+            <div id="defaultBlock">
+                <label>Blog Title</label> <br>
+                <input type="text" id="addTitle"> <br><br>
+                <label>Summary</label> <br>
+                <textarea id="addSummary" rows="4" cols="50"></textarea> <br>
+                <button class="submitB">Submit</button>
+                <button class="cancelB">Cancel</button>
+            </div>
+
+            <div id="editBlock">
+                <form action="javascript:void(0);" method="POST" id="saveChange">
+                    <label>Blog Title</label> <br>
+                    <input type="text" id="editTitle"> <br><br>
+                    <label>Summary</label> <br>
+                    <textarea id="editSummary" rows="4" cols="50"></textarea> <br>
+                    <input type="submit" value="Edit">
+                    <button onclick="closeEdit()">Cancel</button>
+                </form>
+            </div>
+
+        </dialog>
+
+        <script src="DOMPurify/dist/purify.min.js" > </script>
+        <script src="../JS/blog.js"></script>
+        <!-- <script>clearLocal();</script> -->
+        <script>activateUI();</script>
+        
+
+
+    </main>
+
+</body>
+</html>
+
+
+<!-- <section>
+    <div>
+        <h3>TITLE</h3>
+        <h4>DATE</h4>
+    </div>
+    <p>DESCIPTION</p>
+</section>
+<section>
+    <h3>TITLE</h3>
+    <h4>DATE</h4>
+    <p>DESCRPTION</p>
+</section> -->

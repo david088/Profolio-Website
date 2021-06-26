@@ -1,0 +1,213 @@
+/* TAGS */
+body {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2), 
+        rgba(0, 0, 0, 0.2)
+      ),url(../backgrounds/home_background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0;
+    height: 100%;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+header {
+    position: relative;
+    height: 6vw;
+    width: 100%;
+    background-color: black;
+    margin-top: -4vw;
+    border-bottom: 0.4vw solid rgb(238, 155, 255);
+}
+header h1 {
+    position: relative;
+    font-size: 4vw;
+    text-align: center;
+    color: white;
+    padding-top: 2vw;
+}
+
+dialog {
+    background-color: white;
+    color: black;
+    /* text-align: center; */
+    border: none;
+    padding: 2vw;
+    border-radius: 1vw;
+    max-width: 90vw;
+    font-size: 2.4vh;
+}
+
+dialog::backdrop {
+    background: rgb(0,0,0, 0.4);
+}
+
+/* ID */
+#editBlock {
+    display: none;
+}
+
+#blogItem {
+    text-align: center;
+    
+}
+
+#defaultBlock input, textarea {
+    width: 100%;
+}
+#defaultBlock input {
+    height: 20px;
+}
+#defaultBlock textarea {
+    width: 100%;
+}
+
+#editBlock input, textarea {
+    width: 100%;
+}
+#editBlock input {
+    height: 20px;
+}
+#editBlock textarea {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+#logInButton {
+    display:inline-block;
+}
+#logOutButton {
+    display:none;
+}
+
+/* CLASS */
+.titleSection{
+    height: 6vh;
+    width: 100%;
+    padding-top: 0.5vw;
+    padding-bottom: 0;
+    font-size: 2.5vh;
+    text-align: center;
+    color: black;
+    background-color: rgb(133, 186, 255);
+    /* border-top: 1.5vh solid rgb(238, 155, 255); */
+    /* border-bottom: 1vh solid rgb(238, 155, 255); */
+    /* border: 0.5px solid rgb(133, 186, 255); */
+}
+
+.bButton {
+    font-size: 1vw;
+    width: 15vw;
+    height: 2vw;
+    border: 0.2vh solid black;
+    border-radius: 2vw;
+    margin: 0;
+}
+
+.nButton {
+    background-color: white;
+    font-size: 1.2vw;
+    width: 18vw;
+    height: 2vw;
+    border: 0.2vh solid black;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+.cutomButton {
+    text-decoration: none;
+    /* width: 30vh; */
+    /* height: 5vh; */
+
+    text-align: center;
+    font-size: 2vh;
+    
+    background-color: inherit;
+    color: black;
+    /* border-radius: 1vh; */
+    /* border: 0.4vh solid black; */
+    /* margin-right: 1vw; */
+}
+
+.eachBlogItem {
+    background-color: white;
+    border: 0.3vh solid rgb(133, 186, 255);
+    padding: 2vw;
+    padding-top: 0;
+    margin-top: 0.5vw;
+
+    margin-left: auto;
+    margin-right: auto;display: block;
+}
+
+.eachBlogItem h2 {
+    width: 100%;
+    margin-top: 2vw;
+}
+
+.footerBlock {
+    position: fixed;
+   right: 0;
+   bottom: 0;
+   width: 220px;
+   height: 30px;
+   padding-top: 1vw;
+   background-color: black;
+   color: white;
+   text-align: center;
+   color: white;
+   border: 0.3vh solid rgb(238, 155, 255);
+   border-radius: 1vw;
+}
+
+.jumpButton {
+    text-decoration: none;
+    width: 30vh;
+    /* height: 5vh; */
+
+    text-align: center;
+    font-size: 15px;
+    
+    background-color: inherit;
+    color: white;
+    border-radius: 1vh;
+}
+
+.secretButton {
+    width: 50%
+}
+
+.customButton {
+    text-decoration: none;
+    width: 5vw;
+    height: 3vw;
+    text-align: center;
+    font-size: 2.5vh;
+    
+    background-color: inherit;
+    color: black;
+    border-radius: 1vw;
+    border: 0.4vh solid black;
+    margin-right: 1vw;
+}
+.aBlock {
+    border: 0.1vw solid black;
+    padding: 2vw;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    margin-bottom: 2vw;
+}
+.p1{
+    text-align: left;
+}
+.p2{
+    text-align: right;
+    font-size: 1vw;
+}

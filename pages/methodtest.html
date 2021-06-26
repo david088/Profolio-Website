@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../CSS/styles_General.css">
+    <link rel="stylesheet" href="../CSS/styles_MethodTest.css">
+    <script src="../JS/analytics.js"></script>
+    <meta charset="UTF-8">
+    <meta name="author" content="David Zhao">
+    <meta name="description" content="David Zhao's BIO">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Zhao Portfolio</title>
+</head>
+
+
+<body>
+    <header>
+        <h1 class="name">
+            David Zhao
+        </h1>
+
+        <!-- quick buttons -->
+        <nav class="buttonPos">
+            <form action="support.html" method="GET"> <button class="buttons eachButton">Contact</button> </form>
+            <form action="about.html" method="GET"> <button class="buttons eachButton">About</button> </form>
+            <form action="art.html" method="GET"> <button class="buttons selectedButton">Art</button> </form>
+            <form action="work.html" method="GET"> <button class="buttons eachButton">Work</button> </form>
+            <form action="../index.html" method="GET"> <button class="buttons eachButton">Home</button> </form>    
+        </nav>
+
+        <nav class="buttonPos2" id="menuID">
+            <button class="dropDown_button">Menu</button>
+            <nav class="dropDown_content">
+                <a href="../index.html"> Home </a>
+                <a href="work.html" > Work </a>
+                <a href="art.html" > Art </a>
+                <a href="about.html" > About</a>
+                <a href="support.html"> Contact</a>
+            </nav>  
+            
+            <script src="../JS/dropDownButton.js"></script>
+        </nav>
+
+    </header>
+    <section class="titleSection">
+        <h2 class="titleName">Method Test</h2>
+    </section>
+
+    <main class="mainContainer">
+
+        <nav class="buttonSection">
+            <button class="customButton getB" onclick="showGetForm()">GET</button>
+            <button class="customButton postB" onclick="showPostForm()">POST</button>
+            <button class="customButton putB" onclick="showPutForm()">PUT</button>
+            <button class="customButton deleteB" onclick="showDeleteForm()">DELETE</button>
+        </nav>
+
+        <section class="requestSection" onsubmit="return false">
+            <h3 id="formTitle">Request Form</h3> <hr style="margin-bottom: 1vw;">
+            <form id="get_form">
+                <!-- Hidden Fields -->
+                <input id="id" name="id" type="hidden" value="12345">
+                <input id="date" name="date" type="hidden" >
+
+                <!-- Required Fields -->
+                <label for="article_name">Article Name:</label>
+                <input id="article_name" name="article_name" type="text">
+                <label for="article_body">Article Body:</label>
+                <textarea id="article_body" form="get_form" name="article_body"></textarea>
+                
+                <button id="submitBtn" onclick="respondGet()">SUBMIT</button>
+            </form>
+
+
+        </section>
+
+        <section class="requestSection" style="margin-top: 20px;">
+            <h3>Response</h3> <hr style="margin-bottom: 1vw;">
+            <output id="response"></output>
+        </section>
+
+        <script src="../JS/methodtest.js"></script>
+    </main>
+    
+    <footer>
+        <p class="footerText">DEVELOPED BY DAVID ZHAO &#128060;</p>
+    </footer>
+</body>
+
+
+</html>

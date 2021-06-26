@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../CSS/styles_General.css">
+    <link rel="stylesheet" href="../CSS/styles_Art.css">
+    <script src="../JS/analytics.js"></script>
+    <meta charset="UTF-8">
+    <meta name="author" content="David Zhao">
+    <meta name="description" content="David Zhao's Drawings">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Zhao Portfolio</title>
+</head>
+
+
+<body>
+    <header>
+        <h1 class="name">
+            David Zhao
+        </h1>
+
+        <!-- quick buttons -->
+        <nav class="buttonPos">
+            <form action="support.html" method="GET"> <button class="buttons eachButton">Contact</button> </form>
+            <form action="about.html" method="GET"> <button class="buttons eachButton">About</button> </form>
+            <form action="art.html" method="GET"> <button class="buttons selectedButton">Art</button> </form>
+            <form action="work.html" method="GET"> <button class="buttons eachButton">Work</button> </form>
+            <form action="../index.html" method="GET"> <button class="buttons eachButton">Home</button> </form>    
+        </nav>
+
+        <nav class="buttonPos2" id="menuID">
+            <button class="dropDown_button">Menu</button>
+            <nav class="dropDown_content">
+                <a href="../index.html"> Home </a>
+                <a href="work.html" > Work </a>
+                <a href="art.html" > Art </a>
+                <a href="about.html" > About</a>
+                <a href="support.html"> Contact</a>
+            </nav>  
+            
+            <script src="../JS/dropDownButton.js"></script>
+        </nav>
+
+    </header>
+
+    <section class="titleSection">
+        <h2 id="topTitle" class="titleName">ART</h2>
+    </section>
+
+    
+    <p class="featured">
+        David's art is inspired by mangas (Japanese comics) as he later adds his spin into his pieces 
+        to create his original characters or recreating characters in his art style. <br> <br>
+        Though his pieces are majorly done in manga art-style, he also has an interest in photographing,
+        abstract arts, and more recently, he learns digital art and applies it to one of his programming 
+        projects.  
+    </p>
+
+    <main class="mainContainer">   
+        <section style="margin-top: -2.1vh;">
+            <h2 class="galleryTitle">GALLERY</h2>
+            <div class="gallery">
+                <picture>
+                    <img src="../img/drawing/jpg/demonSlayer.jpg" alt="Demon Slayer Character - Shinobu" onclick="largeImg(this)">
+                </picture>
+            
+                <picture >
+                    <img src="../img/drawing/jpg/fly.jpg" alt="eagal pencil drawing" onclick="largeImg(this)">
+                </picture>
+           
+                <picture>
+                    <img src="../img/drawing/jpg/dimitri.jpg" alt="Fire Emblem Dimitri" onclick="largeImg(this)">
+                </picture>
+            
+                <picture>
+                    <img src="../img/drawing/jpg/gogo.jpg" alt="OC - Abstract Art" onclick="largeImg(this)">
+                </picture>
+            
+                <picture>
+                    <img src="../img/drawing/jpg/sombra.jpg" alt="Overwatch Sombra" onclick="largeImg(this)">
+                </picture>
+            
+                <picture>
+                    <img src="../img/drawing/jpg/portrait.jpg" alt="OC - Realistic Drawing" onclick="largeImg(this)">
+                </picture>
+            
+                <picture>
+                    <img src="../img/drawing/jpg/camp.jpg" alt="OC - Camping" onclick="largeImg(this)">
+                </picture>
+            
+                <picture>
+                    <img src="../img/drawing/jpg/cover.jpg" alt="OC - Cover Art" onclick="largeImg(this)">
+                </picture>
+            
+                <picture>
+                    <img src="../img/drawing/jpg/joker.jpg" alt="Joker" onclick="largeImg(this)">
+                </picture>
+            
+                <picture>
+                    <img src="../img/drawing/jpg/lyn.jpg" alt="OC - Complexed Drawing" onclick="largeImg(this)">
+                </picture>
+            
+                <picture>
+                    <img src="../img/drawing/jpg/lola.jpg" alt="OC - Lola" onclick="largeImg(this)">
+                </picture>
+            
+                <picture>
+                    <img src="../img/drawing/jpg/adom.jpg" alt="OC - Adom" onclick="largeImg(this)">
+                </picture>
+            
+                <picture>
+                    <img src="../img/drawing/jpg/luguan.jpg" alt="OC - Friend" onclick="largeImg(this)">
+                </picture>
+            
+                <picture>
+                    <img src="../img/drawing/jpg/rainbow1.jpg" alt="OC - Rainbow1" onclick="largeImg(this)">
+                </picture>
+            
+                <picture>
+                    <img src="../img/drawing/jpg/rainbow2.jpg" alt="OC - Rainbow2" onclick="largeImg(this)">
+                </picture>
+            
+                <picture>
+                    <img src="../img/drawing/jpg/rainbow3.jpg" alt="OC - Rainbow3" onclick="largeImg(this)">
+                </picture>
+            
+                <picture>
+                    <img src="../img/drawing/jpg/rainbow4.jpg" alt="OC - Rainbow4" onclick="largeImg(this)">
+                </picture>
+            </div>
+            <dialog id="dialogImg"> <img id="resultSec" src="../img/drawing/jpg/adom.jpg" alt="empty"> <br> <button id="imgClose">Close</button></dialog>
+            <script src="../JS/largeImageJS.js"></script>
+        </section>
+
+        <nav class="quickButtons">
+            <a class="jumpButton" href="#topTitle"> Back to Top</a> 
+        </nav> 
+    </main>
+
+    <footer>
+        <p class="footerText">DEVELOPED BY DAVID ZHAO &#128060;</p>
+    </footer>
+</body>
+
+
+</html>

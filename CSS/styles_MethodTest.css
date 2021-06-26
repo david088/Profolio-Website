@@ -1,0 +1,91 @@
+.requestSection {
+    padding: 1vw;
+    padding-top: 0;
+    /* font-size: 1vw; */
+    border: 0.2vw solid black;
+}
+
+.requestSection h3 {
+    /* font-size: 1.2vw; */
+    font-weight: bold;
+}
+
+.requestSection input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+#responseBlock {
+    margin-top: 2vw;
+}
+
+#response {
+    width: 100%;
+}
+
+#submitBtn {
+    width: 100%;
+    padding: 0.2vw;
+}
+
+#get_form {
+    display: none;
+}
+
+/* #response pre {
+    font-size: 1vw;
+} */
+
+/*/////////////////////////////////////////////////////////*/
+.mainContainer {
+    background-color: white;
+    padding-bottom: 7vh;
+    padding-top: 7vh;
+    padding-left: 7vh;
+    padding-right: 7vh;
+}
+
+.buttonSection {
+    margin-top: -2vw;
+    margin-bottom: 1.5vw;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.customButton {
+    float: none;
+    text-decoration: none;
+    outline: none;
+    width: 9vw;
+
+    text-align: center;
+    font-size: 1vw;
+    
+    background-color: inherit;
+    color: black;
+    border-radius: 1vh;
+    margin-right: 1vw;
+}
+.postB {
+    color: orange;
+    border: 0.3vh solid orange;
+}
+.getB {
+    color: green;
+    border: 0.3vh solid green;
+}
+.putB {
+    color: blue;
+    border: 0.3vh solid blue;
+}
+.deleteB {
+    color: red;
+    border: 0.3vh solid red;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../CSS/styles_General.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="David Zhao">
+    <meta name="description" content="David Zhao's Experiment Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Zhao Portfolio</title>
+    <style>
+        .animation {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20vw;
+            height: 20vw;
+            background-color: rgb(238, 155, 255);
+            animation-name: test1;
+            animation-duration: 10s;
+            border: 1px solid black;
+            -ms-transform: rotate(20deg); /* IE 9 */
+            transform: rotate(20deg);
+        }
+
+        @keyframes test1 {
+        from {background-color: rgb(238, 155, 255);}
+        to {background-color: rgb(133, 186, 255);}
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="name">
+            David Zhao
+        </h1>
+
+        <!-- quick buttons -->
+        <nav class="buttonPos">
+            <form action="support.html" method="GET"> <button class="buttons eachButton">Contact</button> </form>
+            <form action="about.html" method="GET"> <button class="buttons eachButton">About</button> </form>
+            <form action="art.html" method="GET"> <button class="buttons eachButton">Art</button> </form>
+            <form action="work.html" method="GET"> <button class="buttons eachButton">Work</button> </form>
+            <form action="../index.html" method="GET"> <button class="buttons eachButton">Home</button> </form>    
+        </nav>
+
+        <nav class="buttonPos2">
+            <button class="dropDown_button">Menu</button>
+            <nav class="dropDown_content">
+                <a href="../index.html"> Home </a>
+                <a href="work.html" > Work </a>
+                <a href="art.html" > Art </a>
+                <a href="about.html" > About</a>
+                <a href="support.html"> Contact</a>
+            </nav>    
+        </nav>
+
+    </header>
+    <section class="titleSection">
+        <h2 id="topTitle" class="titleName">EXPERIMENT</h2>
+    </section>
+
+    <main style="background-color: white;">
+        <section>
+            <h2>CSS ANIMATION & TRANSFORMATION</h2>
+            <div class="animation"> THIS IS THE AREA FOR 10S OF COLOR ANIMATION WITH TRANSLATED BACKGROUND </div>
+        </section>
+
+    </main>
+
+    
+    <footer>
+        <p class="footerText">DEVELOPED BY DAVID ZHAO &#128060;</p>
+    </footer>
+
+</body>
+</html>

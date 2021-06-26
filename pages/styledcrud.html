@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../CSS/styles_styledcrud.css">
+    <script src="../JS/analytics.js"></script>
+    <meta charset="UTF-8">
+    <meta name="author" content="David Zhao">
+    <meta name="description" content="David Zhao's Experiment Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Zhao Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="topTitle">
+            BLOG SKYLINE
+        </h1>
+    </header>
+    
+    <main>
+            <nav class="titleSection">
+                <button id="blogButton" class="bButton">CREATE MY BLOG</button>
+                <button class="nButton"><output class="resultSec">Hi, Stranger</output></button>
+                <button id="logInButton" class="bButton" onclick="logIn()">Log In</button>
+                <button id="logOutButton" class="bButton" onclick="logOut()">Logout</button>
+            </nav>
+        
+            <table>
+                <tbody id="blogItem">
+                </tbody>
+            </table>
+    
+            <!-- INPUT BLOG FROM HERE -->
+            <dialog id="blogD">
+                <div id="defaultBlock">
+                    <label>Blog Title</label> <br>
+                    <input type="text" id="addTitle"> <br><br>
+                    <label>Summary</label> <br>
+                    <textarea id="addSummary" rows="6" cols="50"></textarea> <br>
+                    <button class="cutomButton submitB">Submit</button>
+                    <button class="cutomButton cancelB">Cancel</button>
+                    
+                </div>
+    
+                <div id="editBlock">
+                    <form action="javascript:void(0);" onsubmit="return false" id="saveChange">
+                        <label>Blog Title</label>
+                        <input type="text" id="editTitle"> <br><br>
+                        <label>Summary</label> <br>
+                        <textarea id="editSummary" rows="4" cols="50"></textarea> <br>
+                        <!-- <input type="submit" value="Edit"> -->
+                        <button class="cutomButton" onclick="saveChange()">Comfirm</button>
+                        <button class="cutomButton" onclick="closeEdit()">Cancel</button>
+                    </form>
+                </div>
+    
+            </dialog>
+    
+            <script src="DOMPurify/dist/purify.min.js" > </script>
+
+
+            <!-- Firebase Setup -->
+            <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+            <script src="../JS/firebaseCRUD.js"></script>
+
+
+        
+        <nav class="footerBlock">
+            <a class="jumpButton" href="../index.html"> Home</a> |
+            <a class="jumpButton" href="#topTitle"> Back to Top</a>
+        </nav>
+
+    </main>
+
+</body>
+</html>

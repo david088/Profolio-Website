@@ -1,0 +1,25 @@
+.mainContainer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    /* position: relative; */
+    /* border: 1px solid green; */
+}
+
+.information {
+    text-align: center;
+    width: 95%;
+    color: black;
+    font-size: 2.5vh;
+}
+
+@media screen and (max-width: 750px) {
+    .information {
+        width: 75%;
+        text-align: left;
+        font-size: 3vh;
+    }
+}

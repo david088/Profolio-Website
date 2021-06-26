@@ -1,0 +1,354 @@
+body {
+    /* background-color: rgb(39, 39, 39); */
+    background-color: black;
+    margin:0;
+    /* height: 100%; */
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+header {
+    position: relative;
+    height: 8.75vw;
+    width: 100%;
+    background-color: black;
+    margin-top: -4vw;
+    border-bottom: 0.4vw solid rgb(238, 155, 255);
+    box-shadow: 0 0.4vw 0 rgb(133, 186, 255);
+}
+
+footer {
+    position: relative;
+    font-size: 1vw;
+    width: 100%;
+    height: 1.5vw;
+    color: white;
+    border-top: 0.4vw solid rgb(133, 186, 255);
+    border-bottom: 0.4vw solid rgb(133, 186, 255);
+    box-shadow: 0 0.4vw 0 rgb(238, 155, 255);
+    background-color: black;
+    text-align: right;
+    margin-bottom: 0;    
+}
+
+/*///// CSS VARIABLES /////*/
+.footerText {
+    margin-top: 0;
+}
+
+.name { 
+    position: relative;
+    font-size: 4vw;
+    text-align: center;
+    color: white;
+    padding-top: 3.5vw;
+    /* margin-bottom: 4vw; */
+}
+
+.contentBlock {
+    background-color: black;
+    width: 100%;
+    margin-top: .7vw;
+    border-bottom: 0.4vw solid rgb(238, 155, 255);
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+
+    /* display: flex;
+    justify-content: center; */
+}
+
+.myPhoto{
+    width: 30vw;
+    height: 35vw;
+    margin-right: 2vw;
+}
+
+.tabButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.tabButtonSmall {
+    display: none;
+}
+
+.tabPhoto {
+    width: 10vw;
+    height: 35vw;
+    margin-right: 2vw;
+    border-left: 0.1px solid rgb(133, 186, 255);
+}
+
+.tabPhotoWork {
+    width: 13vw;
+    height: 35vw;
+    margin-right: 2vw;
+    border-left: 0.1px solid rgb(133, 186, 255);
+}
+
+.overlay-box {
+    /* background-color: #f5f5f5; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.overlay-box:hover .desc,
+.overlay-box:focus .desc {
+    opacity: 1;
+}
+  
+  /* opacity 0.01 for accessibility */
+  /* adjust the styles like height,padding to match your design*/
+.overlay-box .desc {
+    position:absolute;
+
+    border-left: 1px solid rgb(133, 186, 255);
+    opacity: 0.01;
+    font-size: 1vw;
+
+    top: 0;
+
+    width: 10vw;
+    height: 35vw;
+    /* margin-top: -35vw; */
+    /* padding: 30px 25px 20px; */
+    transition: all 0.5s ease;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.overlay-box:hover .desc2,
+.overlay-box:focus .desc2 {
+    opacity: 1;
+}
+  
+  /* opacity 0.01 for accessibility */
+  /* adjust the styles like height,padding to match your design*/
+.overlay-box .desc2 {
+    position:absolute;
+
+    border-left: 1px solid rgb(133, 186, 255);
+    opacity: 0.01;
+    font-size: 1vw;
+
+    top: 0;
+
+    width: 13vw;
+    height: 35vw;
+    /* margin-top: -35vw; */
+    /* padding: 30px 25px 20px; */
+    transition: all 0.5s ease;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.overlay-box:hover .desc3,
+.overlay-box:focus .desc3 {
+    opacity: 1;
+}
+  
+  /* opacity 0.01 for accessibility */
+  /* adjust the styles like height,padding to match your design*/
+.overlay-box .desc3 {
+    position:absolute;
+
+    border-left: 1px solid rgb(133, 186, 255);
+    opacity: 0.01;
+    font-size: 1vw;
+
+    top: 0;
+
+    width: 30vw;
+    height: 35vw;
+    /* margin-top: -35vw; */
+    /* padding: 30px 25px 20px; */
+    transition: all 0.5s ease;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+h5 {
+    position: relative;
+    width: 20vw;
+    margin-top: 15vw;
+    
+    text-align: center;
+    transform: rotate(-90deg);
+    font-size: 3vw;
+    
+    border: 1px solid rgb(238, 155, 255);
+    
+}
+
+.normalh5 {
+    margin-left: -5vw;
+}
+
+.workh5 {
+    margin-left: -3vw;
+}
+
+.abouth5 {
+    margin-left: 5vw;
+}
+
+.quickButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.jumpButton {
+    text-decoration: none;
+    width: 35vh;
+    /* height: 5vh; */
+
+    text-align: center;
+    font-size: 2.4vh;
+    
+    background-color: inherit;
+    color: white;
+    border-radius: 1vh;
+    border: 0.5vh solid white;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.jumpButton:hover{
+    border: 0.5vh solid rgb(238, 155, 255);
+}
+
+.jumpButton:focus{
+    outline: none;
+    border: 0.5vh solid rgb(238, 155, 255);
+}
+
+@media screen and (max-width: 1000px) {
+
+    header {
+        height: 10vh;
+        border-bottom: 0.6vh solid rgb(238, 155, 255);
+        box-shadow: 0 0.6vh 0 rgb(133, 186, 255);
+    }
+
+    footer {
+        font-size: 1.5vh;
+        height: 3vh;
+        
+        border-top: 0.6vh solid rgb(133, 186, 255);
+        border-bottom: 0.6vh solid rgb(133, 186, 255);
+        box-shadow: 0 0.6vh 0 rgb(238, 155, 255); 
+    }
+    .footerText {
+        margin-top: 0.4vh;
+    }
+
+    .name { 
+        position: relative;
+        font-size: 4vh;
+        text-align: center;
+        color: white;
+        padding-top: 4vh;
+        /* margin-bottom: 4vw; */
+    }
+
+    .contentBlock {
+        border-bottom: 0.6vh solid rgb(238, 155, 255);
+    }
+
+    .tabButton {
+        display: none;
+    }
+    .tabButtonSmall {
+        width: 100%;
+        height: 100%;
+        display: block;
+        
+        
+        /* justify-content: center; */
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap; 
+        flex-basis: 80%;
+        /* align-items: center; */
+    
+        /* border: 2px solid pink; */
+    }
+
+    .contentBlock {    
+        display: flex;
+        justify-content: center;
+        
+    }
+    .tabPhoto {
+        width: 45vh;
+        height: 45vh;
+        margin-bottom: 3vh;
+        margin-left: 5vh;
+    }
+    
+    .squareText{
+        text-decoration: none;
+        color: white;
+        position: relative;
+        width: 25vh;
+        height: 100%;
+
+        margin-top: 20vh;
+        margin-left: -10vh;
+        margin-right: -20vh;
+        
+        text-align: center;
+        transform: rotate(-90deg);
+        font-size: 5vh;
+        
+        border: 1px solid white;
+    }
+
+    .overlay-box {
+        display: flex;
+        text-decoration: none;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .tabPhoto {
+        width: 80%;
+        height: 100%;
+        margin-bottom: 3vh;
+    }
+    .squareText{
+        margin-top: 15vh;
+    }
+    .overlay-box {
+        display: flex;
+        text-decoration: none;
+        margin-left: -5vh;
+    }
+}
+/*
+  rgb(252, 143, 203);
+  <a href="pages/work.html"><img src="tab_img/light_tab.jpg" alt="Work in Tech"></a> <b>WORK</b>
+        <a href="pages/art.html"><img src="tab_img/library.jpg" alt="Art &amp; Photographs"></a> <b>ART</b>
+        <a href="pages/about.html"><img src="tab_img/london1.jpg" alt="About Me"></a> <b>ABOUT</b>
+        <a href="pages/support.html"><img src="tab_img/tree.jpg" alt="Suport"></a> <b>SUPPORT</b>
+  */
+/* background: linear-gradient(to left, transparent,rgb(24, 24, 24)), url("../backgrounds/home_background.jpg");
+    background-position: center;
+    background-size: cover; 
+    <a href="pages/work.html"><img src="img/photo/light.jpg" alt="Work"></a>
+    <a href="pages/art.html"><img src="img/drawing/gogo.jpg" alt="Art &amp; Photographs"></a>
+
+    <section>
+            <form action="pages/experiment.html" method="GET">
+                <button>HTML Lab</button>
+            </form>
+    </section>
+
+    
+*/

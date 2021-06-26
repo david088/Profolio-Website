@@ -1,0 +1,133 @@
+main {
+    background-color: white;
+    padding-bottom: 1.5vw;
+}
+
+h3 {
+    margin-top: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: -1vh;
+    font-size: 1.5vw;
+}
+
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+#resultSec {
+    font-size: 2.7vh;
+}
+
+.quickButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.jumpButton{
+    text-decoration: none;
+    width: 35vh;
+    /* height: 5vh; */
+
+    text-align: center;
+    font-size: 2.4vh;
+    font-weight: bold;
+    
+    background-color: inherit;
+    color: black;
+    border-radius: 1vh;
+    border: 0.5vh solid rgb(133, 186, 255);
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-right: 1vh;
+}
+
+.jumpButton:hover{
+    border: 0.5vh solid rgb(238, 155, 255);
+}
+
+.jumpButton:focus{
+    outline: none;
+}
+
+.jumpButton2{
+    text-decoration: none;
+    width: 35vh;
+    /* height: 5vh; */
+
+    text-align: center;
+    font-size: 2.4vh;
+    font-weight: bold;
+    
+    background-color: inherit;
+    color: black;
+    border-radius: 1vh;
+    border: 0.5vh solid rgb(238, 155, 255);
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-right: 1vh;
+}
+
+.jumpButton2:hover{
+    border: 0.5vh solid rgb(133, 186, 255);
+}
+
+.jumpButton2:focus{
+    outline: none;
+}
+
+.outputSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 35vh;
+    border: 0.3vh solid black;
+    border-radius: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vw;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+dialog {
+    background-color: white;
+    color: black;
+    text-align: center;
+    border: none;
+    padding: 2vw;
+    border-radius: 1vw;
+    max-width: 90vw;
+    font-size: 2.4vh;
+}
+
+dialog::backdrop {
+    background: rgb(0,0,0, 0.4);
+}
+
+dialog .cutomButton {
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.4vh;
+    font-weight: bold;
+    
+    background-color: inherit;
+    color: black;
+    border-radius: 1vh;
+    border: 0.5vh solid black;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-right: 1vh;
+
+    outline: none;
+}

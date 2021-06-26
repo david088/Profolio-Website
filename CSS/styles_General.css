@@ -1,0 +1,210 @@
+body {
+    /* background-color: rgb(39, 39, 39); */
+    background-color: black;
+    margin:0;
+    height: 100%;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+header {
+    position: relative;
+    height: 10.4vw;
+    width: 100%;
+    background-color: black;
+    margin-top: -4vw;
+    clear: both;
+    display: inline-block;
+    /* border-bottom: 0.4vw solid rgb(238, 155, 255); */
+    /* box-shadow: 0 0.4vw 0 rgb(133, 186, 255); */
+}
+
+
+footer {
+    position: relative;
+    font-size: 1vw;    width: 100%;
+    height: 1.5vw;
+    color: white;
+    border-top: 0.4vw solid rgb(133, 186, 255);
+    border-bottom: 0.4vw solid rgb(133, 186, 255);
+    box-shadow: 0 0.4vw 0 rgb(238, 155, 255);
+    background-color: black;
+    text-align: right;
+    margin-bottom: 0;    
+}
+
+footer p {
+    margin-top: 0;
+}
+
+.name { 
+    position: relative;
+    font-size: 3.4vw;
+    text-align: left;
+    color: white;
+    padding-top: 3.7vw;
+    margin-left: 6vw;
+    margin-bottom: 4vw;
+    float: left;
+}
+
+.titleSection{
+    height: 8vh;
+    margin-top: -1vh;
+    font-size: 2vh;
+    text-align: center;
+    color: black;
+    background-color: rgb(133, 186, 255);
+    border-top: 1.5vh solid rgb(238, 155, 255);
+    /* border-bottom: 1vh solid rgb(238, 155, 255); */
+    /* border: 0.5px solid rgb(133, 186, 255); */
+}
+.titleName {
+    margin-top: 2.3vh;
+    text-align: center;
+}
+
+.buttons {
+    border: none;
+    background-color: inherit;
+    font-size:calc(1vh + 0.9vw);
+    /* font-size: 1.4vw; */
+    cursor: pointer;
+    float: right;
+    margin-left: 2vw;
+    /* display: inline-block; */
+}
+
+.eachButton{
+    color: white;
+}
+.eachButton:hover{
+    color: rgb(238, 155, 255);
+}
+.eachButton:focus{
+    outline: none;
+    border: none;
+}
+
+.selectedButton{
+    color: rgb(238, 155, 255);
+}
+.selectedButton:hover{
+    color: rgb(238, 155, 255);
+}
+.selectedButton:focus{
+    outline: none;
+    border: none;
+}
+
+.buttonPos {
+    position: relative;
+    margin:0;
+    float: none;
+    padding-top: 8vw;
+    height: 2vw;
+    padding-right: 5vw;
+}
+
+.buttonPos2 {
+    display: none;
+}
+
+
+@media screen and (max-width: 750px) {
+
+    header {
+        height: 13vh;
+    }
+    footer {
+        font-size: 1.5vh;
+        height: 3vh;
+        
+        border-top: 0.6vh solid rgb(133, 186, 255);
+        border-bottom: 0.6vh solid rgb(133, 186, 255);
+        box-shadow: 0 0.6vh 0 rgb(238, 155, 255); 
+    }
+    footer p {
+        margin-top: 0.4vh;
+    }
+
+    .name { 
+        position: relative;
+        font-size: 3.5vh;
+        text-align: left;
+        color: white;
+        padding-top: 3.5vw;
+        margin-left: 6vw;
+        margin-bottom: 4vw;
+        float: left;
+    }
+
+    .buttonPos {
+        display: none;
+    }
+    .buttonPos2 {
+        background-color: inherit;
+        color: white;
+    
+        position: relative;
+        display: block;
+
+        float: right;
+
+        margin-top: 5vh;
+        margin-right: 15vh;
+    }
+    
+    .dropDown_button {
+        background-color: inherit;
+        color: white;
+        padding: 3px;
+        font-size: 3.5vh;
+        border: none;
+        cursor: pointer;
+
+        border: 0.3vh solid white;
+        width: 29.2vh;
+
+        margin: 0;
+    }
+    
+    .dropDown_content {
+        display: none;
+        position: absolute;
+        background-color: inherit;
+        /* max-width: 16vh; 160px; */
+        border: 0.2vh solid white;
+        border-top: none;
+        z-index: 1; 
+    }
+    
+    .dropDown_content a {
+        color: white;
+        padding: 5vh 7vh;
+        text-decoration: none;
+        display: block;
+        font-size: 3.5vh;
+    }
+      
+    .dropDown_content a:hover {
+        color: black;
+        background-color: #f1f1f1
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .buttonPos2 {
+        outline: none;
+        background-color: inherit;
+        color: white;
+    
+        position: relative;
+        display: block;
+
+        float: right;
+
+        margin-top: 5vh;
+        margin-right: 1vh;
+    }
+}
